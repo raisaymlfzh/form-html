@@ -1,95 +1,137 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>form html</title>
+		<title>TUGAS FORM PENDAFTARAN</title>
 		<meta name="author" content="raisa yaumil fauziah">
-	</head>
+	<head>
+	
 	<body>
-	    <form method="" action="">
-		    <fieldset>
-			    <legend>data pribadi</legend>
-		    </fieldset>
-		    <table>
-			<tr>
-		    <th><label for="NAMA">NAMA</label></th>
-		    <td><input type="text"name="nama"id="nama" autofocus placeholder="Nama Lengkap" required></td>
+	
+	    <h1>Form Pendaftaran</h1>
+		<form action="" method"post">
+		<table width="100%">
+		<tr>
+		<td width="50%">
+		  <fieldset>
+		  <legend>Data Pribadi</legend>
+		  <table>
+		    <tr>
+			   <td><label>Nama Lengkap </label></td> 
+			   <td width="20"> : </td>
+			   <td><input type="text" name="nama">
 			</tr>
-			
-			<tr>
-			<th><label for="NIM">NIM</label></th>
-			<td><input type="number"name="nim" id="nim" value="2401081018" readonly></td>
+	        <tr>
+		       <td><label>Email  </label></td> 
+		       <td> : </td>
+			   <td><input type="email" name="email">
 			</tr>
-			
-			<tr>
-			<th><label for="EMAIL">EMAIL</label></th>
-			<td><input type="email"name="email" id="email"></td>
+	        <tr>
+		       <td><label>Nomor Telepon </label></td> 
+			   <td> : </td>
+		       <td><input type="number" name="hp"> 
 			</tr>
-			
-			<tr>
-			<th><label for="JENIS KELAMIN">JENIS KELAMIN</label></th>
-			<td><input type="radio"name="jenis kelamin" value="laki laki">laki laki
-			<input type="radio"name="jenis kelamin" value="perempuan">permpuan
-			</td>
+	        <tr>
+		       <td><label>Alamat  </label></td> 
+			   <td> : </td>
+			   <td><textarea name="alamat" cols="40" rows="8"></textarea> 
 			</tr>
-			
-			<tr>
-			<th><label for="TGL_LAHIR">TGL_LAHIR</label></th>
-			<td><input type="date"name="tgl_lahir" id="tgl_lahir">
-			<input type="datetime-local">
-			</td>
+	        <tr>   
+		       <td><label>Tanggal Lahir  </label></td>
+			   <td> : </td>
+		       <td><input type="date" name="tgllahir"></td>
+            </tr>
+	        <tr>	  
+		       <td><label>Jenis Kelamin </label></td> 
+			   <td> : </td>
+		       <td><input type="radio" name="gender" value="laki-laki">Laki-Laki
+		           <input type="radio" name="gender" value="perempuan">Perempuan
+            </tr>
+	        <tr>
+		       <td><label>Agama </label></td> 
+			   <td> : </td>
+		       <td><select name="agama">
+		          <option>Pilih Agama</option>
+		          <option value="islam">ISLAM</option>
+			      <option value="kristen katolik">KRISTEN KATOLIK</option>
+			      <option value="konghucu">KONGHUCU</option>
+				  <option value="budha">BUDHA</option>
+				  <option value="hindu">HINDU</option>
+				  <option value="kristen protestan">KRISTEN PROTESTAN</option>
+		          <select>
+            </tr>
+	        <tr>	  
+		       <td><label>Pendidikan Terakhir </label></td> 
+			   <td> : </td>
+		       <td><input type="radio" name="pendidikan" value="sma">SMA
+		           <input type="radio" name="pendidikan" value="d3">D3
+				   <input type="radio" name="pendidikan" value="s1">S1
+		    </tr>
+	        <tr>
+		       <td><label>Foto </label></td>
+			   <td> : </td>
+		       <td><input type="file" name="foto"></td>
 			</tr>
-			
-			<tr>
-			<th><label for="HOBI">HOBI</label></th>
-			<td><input type="checkbox"name="hobi" value="membaca">membaca
-			<input type="checkbox"name="hobi" value="berenang">berenang
-			<input type="checkbox"name="hobi" value="menyanyi">menyanyi
-			</td>
+	        <tr>
+		       <td><label>CV </label></td>
+			   <td> : </td>
+		       <td><input type="file" name="cv"></td>
+			  </tr>
+		  </table>
+          </fieldset>
+		</td>
+		
+		<td width="50%">
+		  <fieldset>
+		  <legend>Data Orang Tua</legend>
+		  <table>
+		    <tr>
+			   <td><label>Nama Ayah </label></td> 
+			   <td width="20"> : </td>
+			   <td><input type="text" name="nama">
 			</tr>
-			
-			<tr>
-			<th><label for="PASSWORD">PASSWORD</label></th>
-			<td><input type="password" name="password"></td>
+	        <tr>
+		       <td><label>Pekerjaan Ayah </label></td> 
+		       <td> : </td>
+			   <td><input type="text" name="nama">
 			</tr>
-			
-			<tr>
-			<th><label for="FOTO">FOTO</label></th>
-			<td><input type="file"name="foto"accept="image/*"></td>
+	        <tr>
+		       <td><label>Alamat Ayah </label></td> 
+			   <td> : </td>
+			   <td><textarea name="alamat" cols="40" rows="5"></textarea>
 			</tr>
-			
-			<tr>
-			<th><label for="WARNA FAVORIT">WARNA FAVORIT</label></th>
-			<td><input type="color"name="nama favorit"></td>
+	        <tr>
+		       <td><label> Telepon Ayah </label></td> 
+			   <td> : </td>
+		       <td><input type="number" name="hp"> 
+            </tr>
+	        <tr>
+		       <td><label> Ibu </label></td> 
+			   <td width="20"> : </td>
+			   <td><input type="text" name="nama">
+		    </tr>
+	        <tr>
+		       <td><label> Ibu </label></td> 
+		       <td> : </td>
+			   <td><input type="text" name="nama">
 			</tr>
-			
-			<tr>
-			<th><label for="ALAMAT">ALAMAT</label></th>
-			<td><textarea name="alamat" id="alamat" cols="30" rows="5"></textarea></td>
+	        <tr>
+		       <td><label> Ibu </label></td> 
+			   <td> : </td>
+			   <td><textarea name="alamat" cols="40" rows="5"></textarea>
 			</tr>
-            <td>
-				<select for="kota" id="kota">kota</label>
-				    <option value="padang pariaman">padang pariaman</option>
-					<option value="koto tinggi">koto tinggi</option>
-					<option value="rimbo dadok">rimbo dadok</option>
-				</select>
-			</td>
-			
-			<tr>
-			<td colspan="2">&nbsp</td>
+	        <tr>
+		       <td><label> Telepon Ibu </label></td> 
+			   <td> : </td>
+		       <td><input type="number" name="hp">  
+            <tr>			   
+			 <td><input type="submit"> <input type="reset"></td>
 			</tr>
+		  </fieldset>
 			
-			<tr>
-			<td colspan="2" align="center"><input type="submit"></td>
-			</tr>
+			 
+		  
 			
-			
-		</form>
-	</body>
-</html>	
+		  
+		  
 
-
-
-
-
-readonly=g gak bisa diubah lagi
-required=memberi peringatan
+			   
