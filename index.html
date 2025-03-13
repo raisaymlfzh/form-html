@@ -1,78 +1,132 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>TUGAS FORM PENDAFTARAN</title>
-		<meta name="author" content="raisa yaumil fauziah">
+		<title>Form</title>
+		<meta name="author" content="Raisa yaumil fauziah">
+		<style>
+			body{
+				background-color: aliceblue;
+				background-image: url("https://www.google.com/imgres?q=gambar%20bendera%20indonesia&imgurl=https%3A%2F%2Ffahum.umsu.ac.id%2Finfo%2Fwp-content%2Fuploads%2F2024%2F05%2FSejarah-Bendera-Pusaka-Merah-Putih-Indonesia.jpg&imgrefurl=https%3A%2F%2Ffahum.umsu.ac.id%2Finfo%2Fsejarah-bendera-pusaka-merah-putih-indonesia%2F&docid=yd6PcYOIICHkBM&tbnid=QTRKZn582-qvxM&vet=12ahUKEwjkyvnRp4aMAxXRxTgGHXzIM5gQM3oECBkQAA..i&w=1366&h=768&hcb=2&ved=2ahUKEwjkyvnRp4aMAxXRxTgGHXzIM5gQM3oECBkQAA");
+				background-size: cover;
+			}
+			h1{
+				color: midnightblue;
+				font-style: italic;
+				text-align: center;
+				font-size: 45px;
+			}
+			.text-merah{
+				color: red;
+			}
+			#text-kuning{
+				color: green;
+			}
+			textarea, select, input[type="text"],[type="email"], [type="date"], [type="file"], [type="number"]{
+				border-radius: 15px;
+				background-color: azure(252, 159, 174);
+				color: aliceblue;
+				padding: 10px;
+				width: 90%;
+				border-color: antiquewhite;
+			}
+			table{
+				background-color: darkblue;
+				opacity: 75%;
+			}
+			*{
+				color: black;
+				font-family: Arial;
+			}
+			.button{
+				background-color: rgb(0, 61, 146);
+				padding: 5px;
+				font-weight: 5px;
+				font-weight: bold;
+				border-radius: 5px;
+				border-color: darkblue;
+			}
+			.button:hover{
+				background-color: rgb(94, 122, 160);
+				padding: 10px;
+				font-weight: 10px;
+				font-weight: bold;
+				border-radius: 10px;
+				border-color: lightblue;
+			}
+		</style>
 	<head>
 	
 	<body>
 	
 	    <h1>Form Pendaftaran</h1>
-		<form action="" method"post">
+		<h1 class="text-merah">Data Mahasiswa</h1>
+		<h1 id="text-kuning">Data Mahasiswa</h1>
+		<form action="" method="post">
 		<table width="100%">
 		<tr>
-		<td width="50%">
+		<td width="50%" valign="top">
 		  <fieldset>
 		  <legend>Data Pribadi</legend>
 		  <table>
 		    <tr>
-			   <td><label>Nama Lengkap </label></td> 
+			   <td> Nama Lengkap  </td> 
 			   <td width="20"> : </td>
-			   <td><input type="text" name="nama">
+			   <td><input type="text" name="nama" value="input nama" autofocus placeholder="Input Nama" required>
 			</tr>
 	        <tr>
-		       <td><label>Email  </label></td> 
+		       <td> Email  </td> 
 		       <td> : </td>
 			   <td><input type="email" name="email">
 			</tr>
 	        <tr>
-		       <td><label>Nomor Telepon </label></td> 
+		       <td>Nomor Telepon </td> 
 			   <td> : </td>
 		       <td><input type="number" name="hp"> 
 			</tr>
 	        <tr>
-		       <td><label>Alamat  </label></td> 
+		       <td>Alamat  </td> 
 			   <td> : </td>
 			   <td><textarea name="alamat" cols="40" rows="8"></textarea> 
 			</tr>
 	        <tr>   
-		       <td><label>Tanggal Lahir  </label></td>
+		       <td>Tanggal Lahir </td>
 			   <td> : </td>
 		       <td><input type="date" name="tgllahir"></td>
             </tr>
 	        <tr>	  
-		       <td><label>Jenis Kelamin </label></td> 
+		       <td>Jenis Kelamin  </td> 
 			   <td> : </td>
 		       <td><input type="radio" name="gender" value="laki-laki">Laki-Laki
 		           <input type="radio" name="gender" value="perempuan">Perempuan
             </tr>
 	        <tr>
-		       <td><label>Agama </label></td> 
+		       <td>Agama  </td> 
 			   <td> : </td>
 		       <td><select name="agama">
 		          <option>Pilih Agama</option>
 		          <option value="islam">ISLAM</option>
-			      <option value="kristen katolik">KRISTEN KATOLIK</option>
+			      <option value="kristen protestan">KRISTEN PROTESTAN</option>
+				  <option value="kristen katolik">KRISTEN KATOLIK</option>
 			      <option value="konghucu">KONGHUCU</option>
-				  <option value="budha">BUDHA</option>
 				  <option value="hindu">HINDU</option>
-				  <option value="kristen protestan">KRISTEN PROTESTAN</option>
+				  <option value="budha">BUDHA</option>
 		          <select>
             </tr>
 	        <tr>	  
-		       <td><label>Pendidikan Terakhir </label></td> 
+		       <td>Pendidikan Terakhir  </td> 
 			   <td> : </td>
 		       <td><input type="radio" name="pendidikan" value="sma">SMA
+				   <input type="radio" name="pendidikan" value="smk">SMK
 		           <input type="radio" name="pendidikan" value="d3">D3
 				   <input type="radio" name="pendidikan" value="s1">S1
 		    </tr>
 	        <tr>
-		       <td><label>Foto </label></td>
+		       <td>Foto  </td>
 			   <td> : </td>
 		       <td><input type="file" name="foto"></td>
 			</tr>
 	        <tr>
-		       <td><label>CV </label></td>
+		       <td>CV  </label></td>
 			   <td> : </td>
 		       <td><input type="file" name="cv"></td>
 			  </tr>
@@ -85,46 +139,46 @@
 		  <legend>Data Orang Tua</legend>
 		  <table>
 		    <tr>
-			   <td><label>Nama Ayah </label></td> 
+			   <td>Nama Ayah  </td> 
 			   <td width="20"> : </td>
 			   <td><input type="text" name="nama">
 			</tr>
 	        <tr>
-		       <td><label>Pekerjaan Ayah </label></td> 
+		       <td>Pekerjaan Ayah  </td> 
 		       <td> : </td>
 			   <td><input type="text" name="nama">
 			</tr>
 	        <tr>
-		       <td><label>Alamat Ayah </label></td> 
+		       <td>Alamat Ayah  </td> 
 			   <td> : </td>
 			   <td><textarea name="alamat" cols="40" rows="5"></textarea>
 			</tr>
 	        <tr>
-		       <td><label> Telepon Ayah </label></td> 
+		       <td>Nomor Telepon Ayah </td> 
 			   <td> : </td>
 		       <td><input type="number" name="hp"> 
             </tr>
 	        <tr>
-		       <td><label> Ibu </label></td> 
+		       <td>Nama Ibu  </td> 
 			   <td width="20"> : </td>
 			   <td><input type="text" name="nama">
 		    </tr>
 	        <tr>
-		       <td><label> Ibu </label></td> 
+		       <td>Pekerjaan Ibu  </td> 
 		       <td> : </td>
 			   <td><input type="text" name="nama">
 			</tr>
 	        <tr>
-		       <td><label> Ibu </label></td> 
+		       <td>Alamat Ibu  </td> 
 			   <td> : </td>
 			   <td><textarea name="alamat" cols="40" rows="5"></textarea>
 			</tr>
 	        <tr>
-		       <td><label> Telepon Ibu </label></td> 
+		       <td>Nomor Telepon Ibu </td> 
 			   <td> : </td>
 		       <td><input type="number" name="hp">  
             <tr>			   
-			 <td><input type="submit"> <input type="reset"></td>
+			 <td><input type="submit" class="button"> <input type="reset" class="button"></td></td>
 			</tr>
 		  </fieldset>
 			
